@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Item } from "../_types/item";
+import axios from "axios";
 
-const domain = "https://localhost:████";
+const domain = "https://localhost:7236";
 
 export function useItemAPI(){
 
@@ -13,8 +14,10 @@ export function useItemAPI(){
     //    GetAll
     // ▀▀▀▀▀▀▀▀▀▀▀▀
     async function getAll() : Promise<void>{
+        const response = await axios.get( domain + "/api/Items/GetItem")
+        console.log(response)
 
-
+        setItemList(response.data)
 
     }
 
