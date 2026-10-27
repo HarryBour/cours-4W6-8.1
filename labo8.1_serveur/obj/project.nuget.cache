@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DA6HMbM216c=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\2466262\\Documents\\GitHub\\cours-4W6-8.1\\labo8.1_serveur\\labo8.1_serveur.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\2466262\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "C:\\Users\\2466262\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}
