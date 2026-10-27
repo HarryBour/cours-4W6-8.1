@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using labo8._1_serveur.Model;
 
-[Route("api/[controller]")]
+[Route("api/[controller]/[action]")]
 [ApiController]
 public class ItemsController : ControllerBase
 {
@@ -76,7 +76,8 @@ public class ItemsController : ControllerBase
     }
 
     // DELETE: api/Item/5
-    [HttpDelete("{id}")]
+    [HttpPost]
+    [Route("/api/destroy/{id}")]
     public async Task<IActionResult> DeleteItem(int? id)
     {
         var item = await _context.Item.FindAsync(id);
